@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: rgb(26, 145, 85);
+    --secondary-color: rgb(228, 243, 253);
+}
+
+body{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: -webkit-linear-gradient(1deg, rgb(35, 177, 94), rgb(15, 48, 80));
+
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: red; */
+}
+
+h1{
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+.insertion{
+    width: 70%;
+    margin-bottom: 23px;
+    /* background: yellow; */
+}
+
+.insertion input{
+    border: 0;
+    outline: 0;
+    width: 50%;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 25px;
+    background: var(--secondary-color);
+    font-size: 15px;
+}
+
+.insertion input:focus{
+    border: 1px solid rgb(77, 161, 218);
+}
+
+.insertion .btn-add{
+    padding: 10px 15px;
+    color: var(--primary-color);
+    border-radius: 30px;
+}
+
+.content{
+    width: 50%;
+    padding: 12px;
+    background: var(--secondary-color);
+    box-shadow: inset 2px 3px 10px rgba(15, 58, 78, 0.6);
+    /* box-shadow: 5px 5px 50px rgba(11, 48, 65, 0.6); */
+    /* color: whitesmoke; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.content .btn{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
+.content i{
+    pointer-events: none;
+}
+
+.line-through{
+    text-decoration: line-through;
+    background: rgba(20, 74, 97, 0.466);
+    color:var(--secondary-color);
+    text-decoration-color: var(--secondary-color);
+    transition: .5s ease-in-out; 
+}
+
+.fadetion{
+    transform: rotateY(90deg);
+    opacity: .1;
+    transition: .5s ease-in-out;
+}
+
+/* Utilities */
+.btn{
+    border: 0;
+    outline: 0;
+    border-radius: 17px;
+    cursor: pointer;
+    background: var(--secondary-color);
+    padding: 6px 10px;
+    margin: 2px
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
